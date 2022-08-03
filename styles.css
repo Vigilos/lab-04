@@ -71,4 +71,11 @@ footer p {
   height: 50px;
   text-align: center;
 }
+.hidden {
+  display: none;
+}
+#welcome-text {
+  font-size: 20px;
+  color: #cb0c0c;
+}
 /* margins and padding: top, right, bottom, left */

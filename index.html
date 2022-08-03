@@ -9,8 +9,7 @@
   </head>
   <body>
     <header>
-      <!--  Background image for Header section  -->
-      <h1>Photography For All</h1>
+      <h1 id="header-text">Photography For All</h1>
       <nav>
         <ul>
           <li><a href="/">Home</a></li>
@@ -18,10 +17,14 @@
           <li>
             <a href="https://rickydodge.github.io/lab04/">Partner Website</a>
           </li>
+          <li>
+            <button class="btn login">Login</button>
+          </li>
         </ul>
       </nav>
     </header>
     <main>
+      <p id="welcome-text">Welcome!</p>
       <p>
         This site gives phtography enthusists a place to post and view their
         photographs to share with the world. Visit our photo topics sections to
@@ -47,9 +50,18 @@
           <p>Drone</p>
         </section>
       </section>
+      <section>
+        <p>
+          Please provide us with your email address and we will send you
+          additional information.
+        </p>
+        <input type="string" class="email" />
+        <button class="btn check">Submit</button>
+      </section>
     </main>
     <footer>
       <p>&copy;2022 Volaraus Drones</p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

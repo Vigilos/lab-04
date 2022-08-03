@@ -1,9 +1,17 @@
 header {
   background-image: url('header-pic.JPG');
+  background-repeat: no-repeat;
   background-size: 100%;
   width: auto;
   height: 300px;
   position: relative;
+}
+header h1 {
+  font-size: 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: absolute;
+  top: 15px;
+  left: 40px;
 }
 nav {
   background-color: #403c3cee;
@@ -12,6 +20,7 @@ nav {
   bottom: 0;
   right: 0;
   width: 100%;
+  height: 30px;
 }
 nav ul {
   padding: 0;
@@ -21,10 +30,21 @@ nav ul {
 nav li {
   display: inline-block;
   margin-right: 35px;
+  padding-top: 5px;
 }
 nav a {
   color: #f0f7fa;
   text-decoration: none;
+}
+nav a:hover {
+  color: #9c9a9a;
+}
+nav a:active {
+  color: #5b88e7;
+}
+.topics {
+  width: 100%;
+  text-align: center;
 }
 .card {
   border: 1px solid black;

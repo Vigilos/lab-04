@@ -10,7 +10,7 @@ document.querySelector('.check').addEventListener('click', function () {
   );
 });
 document.querySelector('.login').addEventListener('click', function () {
-  let loginName = prompt('Please enter your first name:');
+  let loginName = prompt('Please enter your first name (hint: me or staff):');
   if (loginName != null) {
     if (okUsers.includes(loginName.toLocaleLowerCase())) {
       document.querySelector(

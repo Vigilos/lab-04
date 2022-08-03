@@ -1,0 +1,32 @@
+header {
+  background-image: url('header-pic.JPG');
+  background-size: auto;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+nav li {
+  display: inline-block;
+  margin-right: 15px;
+  text-decoration: none;
+}
+.card img {
+  max-height: 120px;
+}
+.card {
+  border: 1px solid black;
+  display: inline-block;
+  max-width: 30%;
+  margin: 25px;
+}
+footer {
+  background-color: #403c3cee;
+}
+footer p {
+  color: #f0f7fa;
+  height: 50px;
+  text-align: center;
+}
+/* margins and padding: top, right, bottom, left */

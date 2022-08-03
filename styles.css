@@ -55,12 +55,13 @@ nav a:active {
 }
 .card img {
   max-height: 120px;
+  width: 100%;
 }
-
 .card p {
   text-align: center;
   font-size: 18px;
   font-weight: bold;
+  width: 100%;
 }
 footer {
   background-color: #403c3cee;

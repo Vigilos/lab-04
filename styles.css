@@ -3,10 +3,15 @@ header {
   background-size: 100%;
   width: auto;
   height: 300px;
+  position: relative;
 }
 nav {
   background-color: #403c3cee;
   text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
 }
 nav ul {
   padding: 0;

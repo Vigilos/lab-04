@@ -27,11 +27,9 @@ document.querySelector('.rate').addEventListener('click', function () {
     );
   }
   for (let i = 1; i <= rating; i++) {
-    console.log(i);
     stars += '⭐';
   }
   document.querySelector('#drone-rating').textContent = stars;
-  console.log(stars);
   rating = 0;
   stars = '';
 });

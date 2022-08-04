@@ -30,24 +30,34 @@
         photographs to share with the world. Visit our photo topics sections to
         see the great work our members have submitted.
       </p>
+      <p id="rateTopic">
+        Click the Rate button to rate the Drone topic below:
+        <!--  <input type="string" class="topicRate" />   -->
+        <button class="btn rate">Rate</button>
+      </p>
       <section class="topics">
         <section class="card">
           <a href="#"
             ><img src="scenery-pic.JPG" alt="Scenery Picture" width="200"
           /></a>
-          <p>Scenery</p>
+          <p class="topicTitle">Scenery</p>
+          <p class="rating">
+            Rating: <span id="scenery-rating">⭐⭐⭐⭐</span>
+          </p>
         </section>
         <section class="card">
           <a href="#"
             ><img src="animals-pic.JPG" alt="Animals Picture" width="200"
           /></a>
-          <p>Animals</p>
+          <p class="topicTitle">Animals</p>
+          <p class="rating">Rating: <span id="animals-rating">⭐⭐⭐</span></p>
         </section>
         <section class="card">
           <a href="#"
             ><img src="drone-pic.JPG" alt="DronePicture" width="200"
           /></a>
-          <p>Drone</p>
+          <p class="topicTitle">Drone</p>
+          <p class="rating">Rating: <span id="drone-rating"></span></p>
         </section>
       </section>
       <section>

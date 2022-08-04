@@ -57,11 +57,16 @@ nav a:active {
   height: 100px;
   width: 100%;
 }
-.card p {
+.topicTitle {
   text-align: center;
   font-size: 18px;
   font-weight: bold;
   width: 100%;
+}
+.rating {
+  text-align: left;
+  font-size: 10px;
+  padding-left: 10px;
 }
 footer {
   background-color: #403c3cee;
@@ -80,5 +85,8 @@ footer p {
   font-weight: bold;
   color: #cb0c0c;
 }
-
+#rateTopic {
+  font-size: 20px;
+  font-weight: bold;
+}
 /* margins and padding: top, right, bottom, left */

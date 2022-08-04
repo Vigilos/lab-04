@@ -4,6 +4,7 @@ const okUsers = ['chris', 'kassie', 'ben'];
 const welcomeText = document.querySelector('#welcome-text');
 const headerText = document.querySelector('#header-text');
 welcomeText.classList.add('hidden');
+let text;
 
 document.querySelector('.check').addEventListener('click', function () {
   alert(
@@ -14,22 +15,21 @@ document.querySelector('.login').addEventListener('click', function () {
   let loginName = prompt('Please enter your first name (hint: me or staff):');
   if (loginName != null) {
     if (okUsers.includes(loginName.toLocaleLowerCase())) {
-      setHeaderText(loginName);
-      welcomeText.textContent = `Welcome ${loginName}!`;
-      welcomeText.classList.remove('hidden');
+      changeText(loginName, true);
     } else {
-      setHeaderText('All');
-      welcomeText.textContent = `Welcome ${
-        loginName || 'anonymous'
-      }! You are not yet an authorized user on this site. Please submit your email address below.`;
-      welcomeText.classList.remove('hidden');
+      changeText(loginName || 'anonymous', false);
     }
-  } else {
-    welcomeText.classList.add('hidden');
-    setHeaderText('All');
   }
 });
 
-const setHeaderText = function (name) {
-  headerText.textContent = `Photography For ${name}`;
+const changeText = function (name, onUserList) {
+  if (onUserList) {
+    headerText.textContent = `Photography For ${name}`;
+    text = `Welcome ${name}!`;
+  } else {
+    headerText.textContent = 'Photography For All';
+    text = `Welcome ${name}! You are not yet an authorized user on this site. Please submit your email address below.`;
+  }
+  welcomeText.textContent = text;
+  welcomeText.classList.remove('hidden');
 };
